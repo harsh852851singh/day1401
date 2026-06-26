@@ -10,7 +10,7 @@ git pull origin main
 
 ------work comaplete
 
-git add.
+git add .
 git status
 git commit -m ""
 git push origin main 
@@ -21,3 +21,7 @@ LAPTOP
 
 git config --global user.name
 git config --global user.email
+
+
+cmd 
+rd /s /q .git
