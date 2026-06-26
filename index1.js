@@ -35,6 +35,49 @@ app.post("/students",(req,res)=>{
 
 });
 
+// update the data
+
+app.put("/students/:id",(req,res) =>{
+    //const id = req.body.parameter.id
+    const{id} =req.params;
+    const student =students.find(s => s.id ==id);
+    //if student found =value...
+    if(!student){
+        return res.status(404).json({
+            message:"students record founded"
+        });
+    }
+    student.name =req.body.name;
+    student.city =req.body.city;
+
+    res.json({
+        message:"record are updated",
+        student
+    });
+
+
+});
+
+app.delete("/students/:id",(req,res)=>{
+    const id = req.params.id;
+    const student = students.find(s => s.id ==id);
+    if(!student){
+        return res.status(404).json({
+            message:"invalid id "
+        });
+    }
+    students =students.filter(s => s.id !=id);
+        res.json({
+            message:"record deleted",
+            students
+        })
+});
+
+
+
+
+
+
 app.listen(3004,()=>{
     console.log("Hello Server is started");
 });
