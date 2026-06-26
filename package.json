@@ -1,0 +1,24 @@
+{
+  "name": "day-14-demo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh852851singh/day1401.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harsh852851singh/day1401/issues"
+  },
+  "homepage": "https://github.com/harsh852851singh/day1401#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
